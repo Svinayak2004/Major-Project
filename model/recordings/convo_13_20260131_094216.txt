@@ -1,0 +1,11 @@
+[Patient] Pauline.
+[Patient] Thank you.
+[Patient] Thank you.
+[Patient] Thank you.
+[Patient] All right!
+[Patient] Thank you.
+[Patient] my name is venev suriyoshi and from last two days i am pursuing a
+[Doctor] high fever, high headache and high body pain. Can you prescribe some medicine doctor? Yes, I understand your problem.
+[Patient] You need to take one Parasitamol, one Do-Do and one Kerosene.
+[Patient] Thank you.
+[Patient] ... ... Oh well

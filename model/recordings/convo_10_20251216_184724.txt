@@ -1,0 +1,5 @@
+[Patient] Hi doctor my name is Vinayak Surya Mushi and last three days I have pursuing fee
+[Patient] my ??
+[Patient] You need to take paracetamol, dolo and
+[Patient] close in advance for 2 days.
+[Patient] Thank you.

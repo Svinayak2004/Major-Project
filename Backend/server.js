@@ -18,8 +18,11 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
+
 app.use("/api/ehr", ehrRoutes);
 app.use("/api/auth", require("./routes/authRoutes")); // new auth routes
+app.use("/api/python", require("./routes/pythonRoutes"));
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));

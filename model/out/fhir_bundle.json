@@ -1,0 +1,33 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "code": {
+          "text": "high fever"
+        },
+        "effectiveDateTime": "2026-01-31T09:51:57.918180"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "code": {
+          "text": "high headache"
+        },
+        "effectiveDateTime": "2026-01-31T09:51:57.918180"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "code": {
+          "text": "high body pain"
+        },
+        "effectiveDateTime": "2026-01-31T09:51:57.918180"
+      }
+    }
+  ]
+}

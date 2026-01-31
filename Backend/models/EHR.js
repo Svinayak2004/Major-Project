@@ -51,7 +51,7 @@ const EhrSchema = new mongoose.Schema({
       code: { type: String },
       display: { type: String }
     },
-    participant: [{ type: String }],  // references to practitioners
+    participant: [{ type: String }],  
     period: {
       start: { type: Date },
       end: { type: Date }
@@ -62,28 +62,28 @@ const EhrSchema = new mongoose.Schema({
   conditions: [
     {
       conditionId: { type: String },
-      code: { type: String },           // e.g., "Hepatitis"
-      clinicalStatus: { type: String }, // active, resolved
-      verificationStatus: { type: String }, // confirmed, unconfirmed
+      code: { type: String },           
+      clinicalStatus: { type: String }, 
+      verificationStatus: { type: String },
       onsetDateTime: { type: Date }
     }
   ],
 
-  // ✅ Symptoms (from Observation)
+  // ✅ Symptoms (Observation)
   observations: [
     {
       observationId: { type: String },
-      code: { type: String },          // e.g., "Symptom"
-      valueString: { type: String },   // e.g., "high fever"
-      status: { type: String }         // final, preliminary
+      code: { type: String },
+      valueString: { type: String },
+      status: { type: String }
     }
   ],
 
-  // ✅ Medications (from MedicationRequest)
+  // ✅ Medications (MedicationRequest)
   medications: [
     {
       medId: { type: String },
-      name: { type: String },          // "Parasiteamol"
+      name: { type: String },
       status: { type: String },
       dosage: { type: String },
       frequency: { type: String },
@@ -92,7 +92,7 @@ const EhrSchema = new mongoose.Schema({
     }
   ],
 
-  // ✅ Care Plan (optional extension)
+  // ✅ Care Plan (optional)
   carePlan: {
     planId: { type: String },
     status: { type: String },
@@ -100,21 +100,22 @@ const EhrSchema = new mongoose.Schema({
     description: { type: String }
   },
 
-  // ✅ Extracted NLP entities (NER)
+  // ✅ Extracted NLP Entities (NER)
   entities: [
     {
-      entity: { type: String },       // e.g., "fever"
-      type: { type: String }          // e.g., "symptom"
+      entity: { type: String },  
+      type: { type: String }     
     }
   ],
 
-  // ✅ Additional details
+  // ✅ Additional Vitals
   vitals: {
     temperature: { type: String },
     bloodPressure: { type: String },
     heartRate: { type: String },
     oxygenSaturation: { type: String }
   },
+
   allergies: [{ type: String }],
   pastHistory: [{ type: String }],
   followUpDate: { type: Date },

@@ -1,0 +1,21 @@
+{
+  "Disease": "",
+  "Symptoms": [
+    "high fever",
+    "high headache",
+    "high body pain"
+  ],
+  "Diagnosis": "",
+  "Medication": [
+    "Parasitamol",
+    "Do-Do",
+    "Kerosene"
+  ],
+  "Dosage": [],
+  "Duration": [],
+  "FollowUp": "",
+  "OtherAdvice": "",
+  "BodyPart": [],
+  "Test": [],
+  "Treatment": []
+}

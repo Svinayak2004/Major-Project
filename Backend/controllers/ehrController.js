@@ -91,6 +91,44 @@ const updateEHR = async (req, res) => {
   }
 };
 
+const downloadEHRReport = async (req, res) => {
+  try {
+    const ehr = await EHR.findById(req.params.id);
+    if (!ehr) {
+      return res.status(404).json({ message: "EHR not found" });
+    }
+
+    // Minimal, clean, frontend-friendly report
+    const report = {
+      patientId: ehr.patientId,
+      patient: {
+        name:
+          ehr.patient?.name?.fullName ||
+          ehr.patient?.name?.given?.[0] ||
+          "N/A",
+        gender: ehr.patient?.gender,
+        birthDate: ehr.patient?.birthDate,
+        contact: ehr.patient?.telecom
+      },
+      diagnosis: ehr.summary?.diagnosis,
+      symptoms: ehr.summary?.symptoms,
+      medications: ehr.medications,
+      vitals: ehr.vitals,
+      advice: ehr.summary?.advice,
+      prognosis: ehr.summary?.prognosis,
+      practitioner: ehr.practitioner,
+      createdAt: ehr.createdAt
+    };
+
+    res.json(report);
+  } catch (err) {
+    res.status(500).json({
+      message: "Failed to generate EHR report",
+      error: err.message
+    });
+  }
+};
 
 
-module.exports = { createEHR, getAllEHRs, getEHRById, deleteEHR, updateEHR };
+
+module.exports = { createEHR, getAllEHRs, getEHRById, deleteEHR, updateEHR, downloadEHRReport};

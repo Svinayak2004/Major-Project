@@ -1,0 +1,4 @@
+[Patient] My name is Vinay Suryanshi and from last two days I am pursuing a
+[Doctor] high fever, high headache and high body pain. Can you prescribe some medicine, doctor? Yes, you know, I understand your problem.
+[Patient] You need to take one Parasitamol, one Do-Do and one Kerosene.
+[Patient] Thank you.
