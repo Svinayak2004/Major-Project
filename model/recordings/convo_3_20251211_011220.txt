@@ -1,7 +1,0 @@
-[Patient] I hope that my name is going to experience you.
-[Doctor] Hi Vinay, how you feel today?
-[Doctor] also I do not eat a proper food.
-[Doctor] Yes, I can understand how you feel today, but I think you have Malaria.
-[Doctor] like symptoms you need to take a 70 days bed rest and high risk of medicine for your disease.
-[Patient] this is paracetamol 4 5 g, dolo 4 2 mg and cokof 0.
-[Patient] Thank you.

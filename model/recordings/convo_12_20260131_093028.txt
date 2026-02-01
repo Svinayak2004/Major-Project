@@ -1,3 +1,0 @@
-[Patient] Hi, my name is Vinay Suryanjee and I am currently pursuing...
-[Patient] in a form of high viewer, high cough and high headache since today.
-[Doctor] Can you prescribe some medicine?

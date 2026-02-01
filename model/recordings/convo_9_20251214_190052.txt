@@ -1,5 +1,0 @@
-[Patient] Hi Doctor, my name is Minak Suryanshi and from
-[Patient] Last three days I have suffering from a fever, cough and other things.
-[Patient] Yes, Vinayak, I have observed that you need to take 400 grams of Paris-Sectomal 400 grams of...
-[Patient] Thank you.
-[Patient] Thank you.
